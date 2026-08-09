@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>SOULSYNC | Parent Dashboard</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="css/demo.css">
+
+</head>
+
+<body>
+
+<!-- ======================================
+        HEADER
+====================================== -->
+
+<header class="parent-header">
+
+    <div>
+
+        <h1>SOULSYNC</h1>
+
+        <p>Parent Dashboard</p>
+
+    </div>
+
+    <div class="parent-badge">
+
+        <i class="fa-solid fa-circle"></i>
+
+        Demo Mode
+
+    </div>
+
+</header>
+
+<!-- ======================================
+        MAIN
+====================================== -->
+
+<main class="dashboard-container">
+
+<!-- ======================================
+        PARENT PROFILE
+====================================== -->
+
+<section class="parent-profile">
+
+<div class="parent-info">
+
+<div class="parent-avatar">
+
+<i class="fa-solid fa-user-group"></i>
+
+</div>
+
+<div class="parent-details">
+
+<h2>
+
+Welcome Parent 👋
+
+</h2>
+
+<p>
+
+Review your child's wellbeing and provide
+valuable observations from home.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="teacher-stats">
+
+<div class="teacher-stat">
+
+<h3>1</h3>
+
+<span>Student</span>
+
+</div>
+
+<div class="teacher-stat">
+
+<h3>Demo</h3>
+
+<span>Mode</span>
+
+</div>
+
+<div class="teacher-stat">
+
+<h3>Active</h3>
+
+<span>Status</span>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================
+        STUDENT SUMMARY
+====================================== -->
+
+<section class="parent-overview">
+
+<h2>
+
+<i class="fa-solid fa-user-graduate"></i>
+
+Student Summary
+
+</h2>
+
+<div class="parent-grid">
+
+<div class="parent-card">
+
+<i class="fa-solid fa-user"></i>
+
+<h3 id="studentNameDisplay">
+
+Loading...
+
+</h3>
+
+<p>
+
+Student Name
+
+</p>
+
+</div>
+
+<div class="parent-card">
+
+<i class="fa-solid fa-id-card"></i>
+
+<h3 id="registerDisplay">
+
+Loading...
+
+</h3>
+
+<p>
+
+Register Number
+
+</p>
+
+</div>
+
+<div class="parent-card">
+
+<i class="fa-solid fa-building-columns"></i>
+
+<h3 id="departmentDisplay">
+
+Loading...
+
+</h3>
+
+<p>
+
+Department
+
+</p>
+
+</div>
+
+<div class="parent-card">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+<h3 id="semesterDisplay">
+
+Loading...
+
+</h3>
+
+<p>
+
+Semester
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================
+        ACADEMIC SUMMARY
+====================================== -->
+
+<section class="parent-overview">
+
+<h2>
+
+<i class="fa-solid fa-book-open"></i>
+
+Academic Summary
+
+</h2>
+
+<div class="parent-grid">
+
+<div class="parent-card">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h3 id="marksDisplay">
+
+0%
+
+</h3>
+
+<p>
+
+Internal Marks
+
+</p>
+
+</div>
+
+<div class="parent-card">
+
+<i class="fa-solid fa-list-check"></i>
+
+<h3 id="assignmentDisplay">
+
+0%
+
+</h3>
+
+<p>
+
+Assignment Completion
+
+</p>
+
+</div>
+
+<div class="parent-card">
+
+<i class="fa-solid fa-brain"></i>
+
+<h3 id="confidenceDisplay">
+
+0
+
+</h3>
+
+<p>
+
+Academic Confidence
+
+</p>
+
+</div>
+
+<div class="parent-card">
+
+<i class="fa-solid fa-clock"></i>
+
+<h3 id="studyDisplay">
+
+0 hrs
+
+</h3>
+
+<p>
+
+Study Hours
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================
+        ATTENDANCE SUMMARY
+====================================== -->
+
+<section class="parent-overview">
+
+<h2>
+
+<i class="fa-solid fa-calendar-check"></i>
+
+Attendance Summary
+
+</h2>
+
+<div class="parent-grid">
+
+<div class="parent-card">
+
+<i class="fa-solid fa-percent"></i>
+
+<h3 id="attendanceDisplay">
+
+0%
+
+</h3>
+
+<p>
+
+Attendance
+
+</p>
+
+</div>
+
+<div class="parent-card">
+
+<i class="fa-solid fa-calendar-xmark"></i>
+
+<h3 id="missedDisplay">
+
+0
+
+</h3>
+
+<p>
+
+Classes Missed
+
+</p>
+
+</div>
+
+<div class="parent-card">
+
+<i class="fa-solid fa-user-clock"></i>
+
+<h3 id="punctualityDisplay">
+
+--
+
+</h3>
+
+<p>
+
+Punctuality
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================
+        WELLBEING SUMMARY
+====================================== -->
+
+<section class="parent-overview">
+
+<h2>
+
+<i class="fa-solid fa-heart"></i>
+
+Wellbeing Summary
+
+</h2>
+
+<div class="parent-grid">
+
+<div class="parent-card">
+
+<i class="fa-solid fa-face-smile"></i>
+
+<h3 id="moodDisplay">
+
+😊
+
+</h3>
+
+<p>
+
+Current Mood
+
+</p>
+
+</div>
+
+<div class="parent-card">
+
+<i class="fa-solid fa-bolt"></i>
+
+<h3 id="stressDisplay">
+
+0
+
+</h3>
+
+<p>
+
+Stress Level
+
+</p>
+
+</div>
+
+<div class="parent-card">
+
+<i class="fa-solid fa-bed"></i>
+
+<h3 id="sleepDisplay">
+
+0 hrs
+
+</h3>
+
+<p>
+
+Sleep Hours
+
+</p>
+
+</div>
+
+<div class="parent-card">
+
+<i class="fa-solid fa-battery-three-quarters"></i>
+
+<h3 id="energyDisplay">
+
+--
+
+</h3>
+
+<p>
+
+Energy Level
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<form id="parentForm">
+    <!-- ======================================
+        HOME OBSERVATION
+====================================== -->
+
+<section class="home-observation">
+
+<h2>
+
+<i class="fa-solid fa-house"></i>
+
+Home Observation
+
+</h2>
+
+<div class="parent-form">
+
+<div class="form-group">
+
+<label>
+
+Sleep Quality
+
+</label>
+
+<select id="sleepQuality">
+
+<option value="">Select</option>
+
+<option>Excellent</option>
+
+<option>Good</option>
+
+<option>Average</option>
+
+<option>Poor</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Eating Habits at Home
+
+</label>
+
+<select id="homeEating">
+
+<option value="">Select</option>
+
+<option>Healthy</option>
+
+<option>Average</option>
+
+<option>Needs Improvement</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Physical Activity
+
+</label>
+
+<select id="physicalActivity">
+
+<option value="">Select</option>
+
+<option>Daily</option>
+
+<option>3 - 5 Times a Week</option>
+
+<option>Occasionally</option>
+
+<option>Rarely</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Screen Time at Home
+
+</label>
+
+<input
+type="number"
+id="homeScreenTime"
+placeholder="Hours Per Day">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Family Communication
+
+</label>
+
+<select id="familyCommunication">
+
+<option value="">Select</option>
+
+<option>Excellent</option>
+
+<option>Good</option>
+
+<option>Average</option>
+
+<option>Needs Improvement</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Time Spent with Family
+
+</label>
+
+<select id="familyTime">
+
+<option value="">Select</option>
+
+<option>More than 3 Hours</option>
+
+<option>1 - 3 Hours</option>
+
+<option>Less than 1 Hour</option>
+
+</select>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================
+        EMOTIONAL WELLBEING
+====================================== -->
+
+<section class="home-observation">
+
+<h2>
+
+<i class="fa-solid fa-heart-circle-check"></i>
+
+Emotional Wellbeing
+
+</h2>
+
+<div class="parent-form">
+
+<div class="form-group">
+
+<label>
+
+Emotional Behaviour
+
+</label>
+
+<select id="emotionalBehaviour">
+
+<option value="">Select</option>
+
+<option>Very Positive</option>
+
+<option>Positive</option>
+
+<option>Neutral</option>
+
+<option>Often Sad</option>
+
+<option>Frequently Stressed</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Confidence at Home
+
+</label>
+
+<select id="homeConfidence">
+
+<option value="">Select</option>
+
+<option>High</option>
+
+<option>Moderate</option>
+
+<option>Low</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Stress Observed at Home
+
+</label>
+
+<select id="homeStress">
+
+<option value="">Select</option>
+
+<option>Never</option>
+
+<option>Occasionally</option>
+
+<option>Frequently</option>
+
+<option>Almost Daily</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Sleep Pattern
+
+</label>
+
+<select id="sleepPattern">
+
+<option value="">Select</option>
+
+<option>Regular</option>
+
+<option>Slightly Irregular</option>
+
+<option>Irregular</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Overall Happiness
+
+</label>
+
+<input
+type="range"
+id="happinessLevel"
+min="1"
+max="10"
+value="5">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Parent Concern Score
+
+</label>
+
+<input
+type="range"
+id="parentConcern"
+min="1"
+max="10"
+value="5">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================
+        PARENT NOTES
+====================================== -->
+
+<section class="home-observation">
+
+<h2>
+
+<i class="fa-solid fa-note-sticky"></i>
+
+Parent Notes
+
+</h2>
+
+<div class="form-group">
+
+<label>
+
+Observations at Home
+
+</label>
+
+<textarea
+id="parentNotes"
+placeholder="Share your observations about your child's behaviour, wellbeing, study habits or anything else you would like the institution to know."></textarea>
+
+</div>
+
+</section>
+<!-- ======================================
+        PARENT CONCERN
+====================================== -->
+
+<section class="home-observation">
+
+    <h2>
+
+        <i class="fa-solid fa-triangle-exclamation"></i>
+
+        Parent Concern Level
+
+    </h2>
+
+    <div class="parent-form">
+
+        <div class="form-group">
+
+            <label>
+
+                Overall Concern Level
+
+            </label>
+
+            <select id="parentConcernLevel">
+
+                <option value="">Select</option>
+
+                <option>Low</option>
+
+                <option>Medium</option>
+
+                <option>High</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>
+
+                Parent Recommendation
+
+            </label>
+
+            <select id="parentRecommendation">
+
+                <option value="">Select</option>
+
+                <option>No Concern</option>
+
+                <option>Monitor at Home</option>
+
+                <option>Meet Class Mentor</option>
+
+                <option>Academic Guidance</option>
+
+                <option>Professional Counselling</option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ======================================
+        SOULSYNC PARENT INSIGHT
+====================================== -->
+
+<section class="parent-note">
+
+    <h3>
+
+        <i class="fa-solid fa-lightbulb"></i>
+
+        SOULSYNC Parent Insight
+
+    </h3>
+
+    <p>
+
+        Your observations are combined with the student's self-assessment
+        and the teacher's classroom observations to provide the institution
+        with a holistic understanding of the student's academic progress,
+        emotional wellbeing, and support needs.
+
+    </p>
+
+</section>
+
+<!-- ======================================
+        ACTION BUTTONS
+====================================== -->
+
+<div class="parent-actions">
+
+    <button
+        type="submit"
+        class="primary-btn">
+
+        Save Parent Feedback
+
+    </button>
+
+    <button
+        type="reset"
+        class="secondary-btn">
+
+        Reset
+
+    </button>
+
+</div>
+
+</form>
+
+</main>
+
+<!-- ======================================
+        JAVASCRIPT
+====================================== -->
+
+<script src="js/parent-dashboard.js"></script>
+
+</body>
+
+</html>

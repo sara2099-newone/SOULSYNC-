@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Emotional Well-being | SOULSYNC</title>
+
+<!-- Google Fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Bootstrap -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f7f9fc;
+color:#222;
+line-height:1.8;
+}
+
+/*======================
+Navbar
+=======================*/
+
+.navbar{
+background:#0f172a;
+padding:14px 0;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.navbar-brand{
+font-size:1.8rem;
+font-weight:800;
+color:#f5b335!important;
+line-height:1.1;
+}
+
+.navbar-brand small{
+display:block;
+font-size:.75rem;
+color:#fff;
+font-weight:400;
+}
+
+.nav-link{
+color:#fff!important;
+margin:0 10px;
+font-weight:500;
+transition:.3s;
+}
+
+.nav-link:hover{
+color:#f5b335!important;
+}
+
+.btn-support{
+background:#f5b335;
+color:#111;
+padding:10px 28px;
+border-radius:40px;
+font-weight:600;
+text-decoration:none;
+transition:.3s;
+}
+
+.btn-support:hover{
+background:#fff;
+color:#0f172a;
+}
+
+/*======================
+Hero Section
+=======================*/
+
+.hero{
+padding:90px 0 60px;
+background:linear-gradient(135deg,#0f172a,#1d4ed8);
+color:#fff;
+}
+
+.hero-badge{
+display:inline-block;
+padding:8px 18px;
+background:rgba(255,255,255,.15);
+border-radius:30px;
+font-weight:600;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:3.2rem;
+font-weight:800;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.hero h1 span{
+color:#f5b335;
+}
+
+.hero p{
+font-size:1.05rem;
+opacity:.92;
+max-width:650px;
+margin-bottom:25px;
+}
+
+.article-meta{
+display:flex;
+flex-wrap:wrap;
+gap:22px;
+margin-top:25px;
+font-size:.95rem;
+}
+
+.article-meta i{
+color:#f5b335;
+margin-right:6px;
+}
+
+.hero-image img{
+width:100%;
+max-width:5000px;
+display: block;
+margin-left:auto;
+border-radius:20px;
+box-shadow:0 25px 50px rgba(0,0,0,.30);
+}
+
+.start-btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 34px;
+background:#f5b335;
+color:#111;
+font-weight:700;
+border-radius:40px;
+text-decoration:none;
+transition:.3s;
+}
+
+.start-btn:hover{
+background:#fff;
+color:#0f172a;
+}
+
+/*======================
+Article
+=======================*/
+
+.article{
+padding:80px 0;
+}
+
+.article-content{
+background:#fff;
+padding:45px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.article-content h2{
+margin:40px 0 20px;
+font-weight:700;
+color:#0f172a;
+}
+
+.article-content h3{
+margin-top:30px;
+color:#1d4ed8;
+font-weight:600;
+}
+
+.article-content p{
+margin-bottom:18px;
+color:#555;
+text-align:justify;
+}
+
+.quote-box{
+background:#fff8e7;
+border-left:6px solid #f5b335;
+padding:30px;
+margin:40px 0;
+border-radius:15px;
+font-style:italic;
+}
+
+.info-card{
+background:#fff;
+border:none;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+padding:30px;
+height:100%;
+transition:.3s;
+}
+
+.info-card:hover{
+transform:translateY(-8px);
+}
+
+.info-card i{
+font-size:2.7rem;
+color:#f5b335;
+margin-bottom:18px;
+}
+
+.info-card h4{
+color:#0f172a;
+font-weight:700;
+margin-bottom:15px;
+}
+
+.info-card p{
+margin-bottom:0;
+}
+/* ======================
+Tables
+====================== */
+
+.table{
+margin:30px 0;
+border-radius:15px;
+overflow:hidden;
+}
+
+.table thead{
+background:#f5b335;
+color:#0f172a;
+}
+
+.table th{
+font-weight:700;
+padding:15px;
+}
+
+.table td{
+padding:15px;
+vertical-align:middle;
+}
+
+/* ======================
+Alert Box
+====================== */
+
+.alert-custom{
+background:#eef6ff;
+border-left:6px solid #1d4ed8;
+padding:30px;
+border-radius:15px;
+margin:40px 0;
+}
+
+/* ======================
+Related Articles
+====================== */
+
+.related-card{
+border:none;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+transition:.3s;
+height:100%;
+}
+
+.related-card:hover{
+transform:translateY(-8px);
+}
+
+.related-card img{
+height:220px;
+object-fit:cover;
+}
+
+.related-card .card-body{
+padding:25px;
+}
+
+.related-card h5{
+font-weight:700;
+color:#0f172a;
+margin-bottom:15px;
+}
+
+.related-card p{
+font-size:15px;
+margin-bottom:20px;
+}
+
+/* ======================
+CTA
+====================== */
+
+.cta-section{
+padding:80px 0;
+}
+
+.cta-box{
+background:linear-gradient(135deg,#0f172a,#1d4ed8);
+color:#fff;
+padding:60px 40px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 20px 45px rgba(0,0,0,.18);
+}
+
+.cta-box h2{
+font-size:2.5rem;
+font-weight:800;
+margin-bottom:20px;
+color: #f5b335;
+}
+
+.cta-box p{
+max-width:700px;
+margin:0 auto 30px;
+color:#fff;
+}
+
+.cta-btn{
+display:inline-block;
+padding:15px 38px;
+background:#f5b335;
+color:#111;
+font-weight:700;
+border-radius:40px;
+text-decoration:none;
+transition:.3s;
+}
+
+.cta-btn:hover{
+background:#fff;
+color:#fff;
+}
+
+/* ======================
+Footer
+====================== */
+
+footer{
+background:#0f172a;
+color:#fff;
+padding:60px 0 25px;
+}
+
+footer h3,
+footer h5{
+color:#f5b335;
+font-weight:700;
+}
+
+footer a{
+color:#fff;
+text-decoration:none;
+transition:.3s;
+}
+
+footer a:hover{
+color:#f5b335;
+padding-left:5px;
+}
+
+/* ======================
+Responsive
+====================== */
+
+@media(max-width:992px){
+
+.hero{
+text-align:center;
+padding-top:130px;
+}
+
+.hero h1{
+font-size:2.4rem;
+}
+
+.hero-image{
+margin-top:40px;
+}
+
+.article-content{
+padding:30px;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+font-size:2rem;
+}
+
+.navbar-brand{
+font-size:1.5rem;
+}
+
+.article-meta{
+justify-content:center;
+}
+
+.cta-box h2{
+font-size:2rem;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- Hero -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="row align-items-center gy-5">
+
+<div class="col-lg-6">
+
+<div class="hero-badge">
+
+<i class="fas fa-heart"></i>
+
+Mental Wellness Guide
+
+</div>
+
+<h1>
+
+Understanding
+
+<span>Emotional Well-being</span>
+
+</h1>
+
+<p>
+
+Emotional well-being helps students understand, express, and manage their emotions in healthy ways. By developing emotional awareness and resilience, students can handle challenges more effectively, build meaningful relationships, and enjoy a balanced academic and personal life.
+
+</p>
+
+<div class="article-meta">
+
+<div>
+<i class="fas fa-user"></i>
+SOULSYNC Team
+</div>
+
+<div>
+<i class="far fa-clock"></i>
+9 min read
+</div>
+
+<div>
+<i class="far fa-calendar"></i>
+Updated July 2026
+</div>
+
+</div>
+
+<a href="#article" class="start-btn">
+
+Start Reading
+
+</a>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="hero-image">
+
+<img src="../images/wellbeing.png"
+alt="Emotional Well-being">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Article Starts -->
+
+<section class="article" id="article">
+
+<div class="container">
+
+<div class="article-content">
+    <h2>What is Emotional Well-being?</h2>
+
+<p>
+Emotional well-being is the ability to understand, manage, and express emotions in healthy ways while maintaining positive relationships and making balanced decisions. It does not mean being happy all the time or avoiding difficult emotions. Instead, it means recognizing your feelings, accepting them without judgment, and responding to life's challenges with resilience and confidence.
+</p>
+
+<p>
+For students, emotional well-being plays a vital role in academic success, physical health, and overall quality of life. When emotions are managed effectively, students are better able to concentrate during classes, cope with setbacks, maintain healthy friendships, and achieve their personal goals. Strong emotional well-being also helps reduce stress, anxiety, and feelings of loneliness.
+</p>
+
+<div class="quote-box">
+
+<i class="fas fa-quote-left fa-2x text-warning mb-3"></i>
+
+<p>
+
+"Every emotion has a purpose. Learning to understand your emotions is the first step toward understanding yourself."
+
+</p>
+
+</div>
+
+<h2>Why Emotional Well-being Matters</h2>
+
+<p>
+Our emotions influence almost every decision we make. Positive emotional well-being helps students think clearly, solve problems effectively, communicate confidently, and recover from disappointments. It also strengthens relationships with family, friends, classmates, and teachers.
+</p>
+
+<p>
+Ignoring emotions, however, can lead to stress, frustration, burnout, and even physical health problems. By paying attention to emotional health every day, students build resilience that helps them navigate both academic and personal challenges.
+</p>
+
+<div class="row my-5">
+
+<div class="col-md-6 mb-4">
+
+<div class="card border-0 shadow-sm rounded-4 h-100">
+
+<div class="card-body">
+
+<h4 class="text-primary">
+
+<i class="fas fa-face-smile text-warning"></i>
+
+Benefits of Emotional Well-being
+
+</h4>
+
+<ul>
+
+<li>Better concentration and learning.</li>
+
+<li>Healthier relationships.</li>
+
+<li>Improved decision-making.</li>
+
+<li>Greater confidence.</li>
+
+<li>Reduced stress and anxiety.</li>
+
+<li>Higher resilience during challenges.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-6 mb-4">
+
+<div class="card border-0 shadow-sm rounded-4 h-100">
+
+<div class="card-body">
+
+<h4 class="text-primary">
+
+<i class="fas fa-triangle-exclamation text-warning"></i>
+
+Signs Your Emotional Health Needs Attention
+
+</h4>
+
+<ul>
+
+<li>Feeling overwhelmed most days.</li>
+
+<li>Frequent mood swings.</li>
+
+<li>Difficulty concentrating.</li>
+
+<li>Loss of motivation.</li>
+
+<li>Social withdrawal.</li>
+
+<li>Persistent sadness or frustration.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<h2>Understanding Your Emotions</h2>
+
+<p>
+Every emotion sends a message. Happiness may indicate satisfaction, fear helps protect us from danger, sadness encourages reflection, and anger often signals that something feels unfair or important. Instead of labeling emotions as "good" or "bad," it is more helpful to understand why they occur and how to respond appropriately.
+</p>
+
+<p>
+Developing emotional awareness begins by identifying your feelings. Ask yourself questions such as "What am I feeling right now?", "What caused this emotion?", and "How can I respond in a healthy way?" This simple habit increases self-awareness and emotional intelligence over time.
+</p>
+
+<h2>Emotional Intelligence</h2>
+
+<p>
+Emotional intelligence refers to the ability to recognize, understand, and manage emotions while also understanding the emotions of others. Students with strong emotional intelligence communicate more effectively, handle conflicts calmly, and build meaningful relationships.
+</p>
+
+<div class="table-responsive my-4">
+
+<table class="table table-bordered text-center align-middle">
+
+<thead class="table-warning">
+
+<tr>
+
+<th>Low Emotional Intelligence</th>
+
+<th>High Emotional Intelligence</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Reacting impulsively.</td>
+
+<td>Responding calmly after thinking.</td>
+
+</tr>
+
+<tr>
+
+<td>Ignoring emotions.</td>
+
+<td>Understanding emotions.</td>
+
+</tr>
+
+<tr>
+
+<td>Blaming others.</td>
+
+<td>Taking responsibility.</td>
+
+</tr>
+
+<tr>
+
+<td>Poor communication.</td>
+
+<td>Active listening and empathy.</td>
+
+</tr>
+
+<tr>
+
+<td>Avoiding conflicts.</td>
+
+<td>Resolving conflicts respectfully.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<h2>Healthy Ways to Manage Emotions</h2>
+
+<p>
+Managing emotions does not mean suppressing them. Instead, it involves expressing them constructively while maintaining balance. Students can improve emotional well-being through simple daily practices that encourage self-awareness, relaxation, and positive thinking.
+</p>
+
+<div class="row my-5">
+
+<div class="col-lg-4 mb-4">
+
+<div class="info-card text-center">
+
+<i class="fas fa-book"></i>
+
+<h4>Journaling</h4>
+
+<p>
+
+Writing down your thoughts and emotions helps organize your feelings and gain new perspectives on challenging situations.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4 mb-4">
+
+<div class="info-card text-center">
+
+<i class="fas fa-people-group"></i>
+
+<h4>Talk to Someone</h4>
+
+<p>
+
+Sharing your feelings with a trusted friend, family member, teacher, or counsellor reduces emotional burden and provides valuable support.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4 mb-4">
+
+<div class="info-card text-center">
+
+<i class="fas fa-leaf"></i>
+
+<h4>Practice Mindfulness</h4>
+
+<p>
+
+Mindfulness helps you stay present, reduce overthinking, and respond to situations with greater calm and clarity.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h2>Building Emotional Resilience</h2>
+
+<p>
+Resilience is the ability to recover from setbacks and continue moving forward despite challenges. Students build resilience by developing healthy coping skills, maintaining supportive relationships, practicing gratitude, and viewing failures as opportunities for growth.
+</p>
+
+<p>
+Every difficult experience teaches valuable lessons. Rather than asking "Why did this happen to me?", resilient individuals ask "What can I learn from this experience?" This shift in perspective encourages personal growth and emotional strength.
+</p>
+<h2>Daily Habits for Better Emotional Well-being</h2>
+
+<p>
+Emotional well-being is strengthened through consistent daily habits rather than occasional efforts. Small positive actions, when practiced regularly, can improve your mood, reduce stress, and help you respond more calmly to life's challenges. Developing healthy routines also creates a sense of stability and confidence, making it easier to handle academic responsibilities and personal relationships.
+</p>
+
+<div class="row my-5">
+
+<div class="col-md-4 mb-4">
+
+<div class="info-card text-center">
+
+<i class="fas fa-sun"></i>
+
+<h4>Start the Day Positively</h4>
+
+<p>
+Begin each morning with a positive thought, a healthy breakfast, and a few minutes of stretching or deep breathing. A positive start sets the tone for the rest of the day.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4 mb-4">
+
+<div class="info-card text-center">
+
+<i class="fas fa-mobile-screen-button"></i>
+
+<h4>Limit Screen Time</h4>
+
+<p>
+Taking regular breaks from social media helps reduce comparison, information overload, and mental fatigue while improving concentration and emotional balance.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4 mb-4">
+
+<div class="info-card text-center">
+
+<i class="fas fa-mug-hot"></i>
+
+<h4>Practice Self-Care</h4>
+
+<p>
+Simple activities such as reading, listening to music, spending time in nature, or enjoying a hobby can refresh your mind and improve emotional health.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h2>Journaling Activity</h2>
+
+<p>
+Writing about your emotions helps you understand your thoughts more clearly. Journaling is one of the most effective ways to reduce stress, identify emotional triggers, and monitor personal growth.
+</p>
+
+<div class="quote-box">
+
+<h4 class="text-primary mb-3">
+
+<i class="fas fa-pen text-warning"></i>
+
+Daily Reflection Journal
+
+</h4>
+
+<ol>
+
+<li>How am I feeling today?</li>
+
+<li>What made me feel this way?</li>
+
+<li>What is one thing I am grateful for today?</li>
+
+<li>What challenge did I overcome today?</li>
+
+<li>What can I do tomorrow to improve my emotional well-being?</li>
+
+</ol>
+
+</div>
+
+<h2>The Power of Gratitude</h2>
+
+<p>
+Practicing gratitude shifts your attention from problems to positive experiences. Even on difficult days, recognizing small moments of joy can improve emotional resilience and increase overall happiness.
+</p>
+
+<div class="alert-custom">
+
+<h4 class="text-primary">
+
+<i class="fas fa-heart text-warning"></i>
+
+Simple Gratitude Challenge
+
+</h4>
+
+<ul>
+
+<li>Write down three things you are grateful for every evening.</li>
+
+<li>Thank someone who has supported you.</li>
+
+<li>Celebrate small achievements instead of waiting for major successes.</li>
+
+<li>Focus on progress rather than perfection.</li>
+
+<li>Spend a few minutes appreciating nature or peaceful surroundings.</li>
+
+</ul>
+
+</div>
+
+<h2>Healthy Emotional Habits</h2>
+
+<p>
+Strong emotional health develops through consistent healthy habits. The following practices help students build emotional resilience and maintain a balanced mindset.
+</p>
+
+<div class="row my-5">
+
+<div class="col-lg-6 mb-4">
+
+<div class="card border-0 shadow-sm rounded-4 h-100">
+
+<div class="card-body">
+
+<h4 class="text-primary">
+
+<i class="fas fa-circle-check text-warning"></i>
+
+Helpful Habits
+
+</h4>
+
+<ul>
+
+<li>Get enough sleep every night.</li>
+
+<li>Exercise regularly.</li>
+
+<li>Eat nutritious meals.</li>
+
+<li>Stay connected with family and friends.</li>
+
+<li>Practice mindfulness or meditation.</li>
+
+<li>Take breaks during study sessions.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-6 mb-4">
+
+<div class="card border-0 shadow-sm rounded-4 h-100">
+
+<div class="card-body">
+
+<h4 class="text-primary">
+
+<i class="fas fa-ban text-warning"></i>
+
+Habits to Avoid
+
+</h4>
+
+<ul>
+
+<li>Ignoring your emotions.</li>
+
+<li>Comparing yourself with others.</li>
+
+<li>Overthinking mistakes.</li>
+
+<li>Spending excessive time on social media.</li>
+
+<li>Skipping meals or losing sleep.</li>
+
+<li>Keeping problems to yourself.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<h2>Key Takeaways</h2>
+
+<div class="card border-0 shadow rounded-4">
+
+<div class="card-body">
+
+<ul>
+
+<li>Emotional well-being helps you understand and manage your emotions effectively.</li>
+
+<li>Every emotion is valuable and provides important information.</li>
+
+<li>Healthy habits, gratitude, journaling, and mindfulness improve emotional resilience.</li>
+
+<li>Strong relationships and asking for support are essential for emotional health.</li>
+
+<li>Small daily actions create lasting improvements in mental well-being.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- ===========================
+Call To Action
+============================ -->
+
+<section class="cta-section">
+
+<div class="container">
+
+<div class="cta-box">
+
+<h2>Take Care of Your Emotional Well-being</h2>
+
+<p>
+Your emotions are an important part of who you are. Learning to understand and manage them is one of the greatest investments you can make in yourself. Remember, every small step toward emotional wellness brings you closer to a happier, healthier, and more balanced life.
+</p>
+
+<a href="../support.html" class="cta-btn">
+
+<i class="fas fa-heart me-2" style="color: #f5b335;"></i>
+
+Get Support Today
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

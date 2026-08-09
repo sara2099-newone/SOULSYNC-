@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>SOULSYNC | Student Dashboard</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="css/demo.css">
+
+</head>
+
+<body>
+
+<!-- =======================================
+        HEADER
+======================================= -->
+
+<header class="dashboard-header">
+
+    <div class="dashboard-title">
+
+        <h1>
+            SOULSYNC
+        </h1>
+
+        <p>
+            Student Dashboard
+        </p>
+
+    </div>
+
+    <div class="demo-badge">
+
+        <i class="fa-solid fa-circle"></i>
+
+        Demo Mode
+
+    </div>
+
+</header>
+
+<!-- =======================================
+        MAIN
+======================================= -->
+
+<main class="student-dashboard">
+
+<!-- =======================================
+        PROFILE SUMMARY
+======================================= -->
+
+<section class="student-profile">
+
+    <div class="profile-left">
+
+        <div class="profile-avatar">
+
+            <i class="fa-solid fa-user-graduate"></i>
+
+        </div>
+
+        <div class="profile-details">
+
+            <h2>
+                Welcome Student 👋
+            </h2>
+
+            <p>
+                Complete your weekly wellbeing assessment to help your mentors understand your progress.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="profile-right">
+
+        <div class="profile-box">
+
+            <h4>Demo</h4>
+
+            <span>Interactive</span>
+
+        </div>
+
+        <div class="profile-box">
+
+            <h4>Status</h4>
+
+            <span>Active</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =======================================
+        STUDENT FORM
+======================================= -->
+
+<form id="studentForm">
+
+<!-- =======================================
+        STUDENT PROFILE
+======================================= -->
+
+<section class="form-section">
+
+<div class="section-card">
+
+<h2>
+
+<i class="fa-solid fa-id-card"></i>
+
+Student Profile
+
+</h2>
+
+<div class="form-grid">
+
+<div class="form-group">
+
+<label>
+
+Student Name
+
+</label>
+
+<input
+type="text"
+id="studentName"
+placeholder="Enter Student Name">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Register Number
+
+</label>
+
+<input
+type="text"
+id="registerNumber"
+placeholder="Enter Register Number">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Department
+
+</label>
+
+<select id="department">
+
+<option value="">
+Choose Department
+</option>
+
+<option>
+Computer Science
+</option>
+
+<option>
+Information Technology
+</option>
+
+<option>
+Artificial Intelligence
+</option>
+
+<option>
+Electronics
+</option>
+
+<option>
+Mechanical
+</option>
+
+<option>
+Civil
+</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Year
+
+</label>
+
+<select id="year">
+
+<option value="">
+Select Year
+</option>
+
+<option>
+First Year
+</option>
+
+<option>
+Second Year
+</option>
+
+<option>
+Third Year
+</option>
+
+<option>
+Final Year
+</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Semester
+
+</label>
+
+<select id="semester">
+
+<option value="">
+Choose Semester
+</option>
+
+<option>
+Semester 1
+</option>
+
+<option>
+Semester 2
+</option>
+
+<option>
+Semester 3
+</option>
+
+<option>
+Semester 4
+</option>
+
+<option>
+Semester 5
+</option>
+
+<option>
+Semester 6
+</option>
+
+<option>
+Semester 7
+</option>
+
+<option>
+Semester 8
+</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Mentor Name
+
+</label>
+
+<input
+type="text"
+id="mentor"
+placeholder="Enter Mentor Name">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =======================================
+        ACADEMIC DETAILS
+======================================= -->
+
+<section class="form-section">
+
+<div class="section-card">
+
+<h2>
+
+<i class="fa-solid fa-book-open"></i>
+
+Academic Information
+
+</h2>
+
+<div class="form-grid">
+
+<div class="form-group">
+
+<label>
+
+Latest Internal Marks (%)
+
+</label>
+
+<input
+type="number"
+id="internalMarks"
+placeholder="0 - 100">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Academic Confidence
+
+</label>
+
+<input
+type="range"
+id="academicConfidence"
+min="1"
+max="10"
+value="5">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Assignment Completion (%)
+
+</label>
+
+<input
+type="number"
+id="assignmentCompletion"
+placeholder="0 - 100">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Study Hours Per Day
+
+</label>
+
+<input
+type="number"
+id="studyHours"
+placeholder="Example : 4">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- =======================================
+        ATTENDANCE
+======================================= -->
+
+<section class="form-section">
+
+<div class="section-card">
+
+<h2>
+
+<i class="fa-solid fa-calendar-check"></i>
+
+Attendance Information
+
+</h2>
+
+<div class="form-grid">
+
+<div class="form-group">
+
+<label>
+
+Overall Attendance (%)
+
+</label>
+
+<input
+type="number"
+id="attendance"
+placeholder="0 - 100">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Classes Missed This Month
+
+</label>
+
+<input
+type="number"
+id="classesMissed"
+placeholder="Enter Number">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Punctuality
+
+</label>
+
+<select id="punctuality">
+
+<option value="">
+Select
+</option>
+
+<option>Always On Time</option>
+
+<option>Usually On Time</option>
+
+<option>Sometimes Late</option>
+
+<option>Frequently Late</option>
+
+</select>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =======================================
+        WELLBEING
+======================================= -->
+
+<section class="form-section">
+
+<div class="section-card">
+
+<h2>
+
+<i class="fa-solid fa-heart"></i>
+
+Wellbeing Assessment
+
+</h2>
+
+<div class="form-grid">
+
+<div class="form-group">
+
+<label>
+
+Current Mood
+
+</label>
+
+<select id="mood">
+
+<option value="">
+Choose Mood
+</option>
+
+<option>😊 Happy</option>
+
+<option>🙂 Calm</option>
+
+<option>😐 Neutral</option>
+
+<option>😔 Sad</option>
+
+<option>😣 Stressed</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Stress Level (1 - 10)
+
+</label>
+
+<input
+type="range"
+id="stressLevel"
+min="1"
+max="10"
+value="5">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Anxiety Level (1 - 10)
+
+</label>
+
+<input
+type="range"
+id="anxietyLevel"
+min="1"
+max="10"
+value="5">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Sleep Hours
+
+</label>
+
+<input
+type="number"
+id="sleepHours"
+placeholder="Example : 7">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Energy Level
+
+</label>
+
+<select id="energyLevel">
+
+<option value="">
+Select
+</option>
+
+<option>High</option>
+
+<option>Medium</option>
+
+<option>Low</option>
+
+</select>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =======================================
+        LIFESTYLE HABITS
+======================================= -->
+
+<section class="form-section">
+
+<div class="section-card">
+
+<h2>
+
+<i class="fa-solid fa-leaf"></i>
+
+Lifestyle Habits
+
+</h2>
+
+<div class="form-grid">
+
+<div class="form-group">
+
+<label>
+
+Daily Water Intake
+
+</label>
+
+<select id="waterIntake">
+
+<option value="">
+Select
+</option>
+
+<option>Less than 1 Litre</option>
+
+<option>1 - 2 Litres</option>
+
+<option>2 - 3 Litres</option>
+
+<option>More than 3 Litres</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Eating Habits
+
+</label>
+
+<select id="eatingHabits">
+
+<option value="">
+Select
+</option>
+
+<option>Healthy</option>
+
+<option>Average</option>
+
+<option>Needs Improvement</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Exercise Frequency
+
+</label>
+
+<select id="exercise">
+
+<option value="">
+Select
+</option>
+
+<option>Daily</option>
+
+<option>3 - 5 Times a Week</option>
+
+<option>Occasionally</option>
+
+<option>Never</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Screen Time (Hours / Day)
+
+</label>
+
+<input
+type="number"
+id="screenTime"
+placeholder="Example : 5">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Social Interaction
+
+</label>
+
+<select id="socialInteraction">
+
+<option value="">
+Select
+</option>
+
+<option>Very Active</option>
+
+<option>Moderately Active</option>
+
+<option>Limited</option>
+
+<option>Very Limited</option>
+
+</select>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- =======================================
+        CLASSROOM PARTICIPATION
+======================================= -->
+
+<section class="form-section">
+
+<div class="section-card">
+
+<h2>
+
+<i class="fa-solid fa-people-group"></i>
+
+Classroom Participation
+
+</h2>
+
+<div class="form-grid">
+
+<div class="form-group">
+
+<label>Participation Level</label>
+
+<select id="participation">
+
+<option value="">Select</option>
+
+<option>Excellent</option>
+
+<option>Good</option>
+
+<option>Average</option>
+
+<option>Needs Improvement</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Teamwork</label>
+
+<select id="teamwork">
+
+<option value="">Select</option>
+
+<option>Excellent</option>
+
+<option>Good</option>
+
+<option>Average</option>
+
+<option>Needs Improvement</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Communication</label>
+
+<select id="communication">
+
+<option value="">Select</option>
+
+<option>Excellent</option>
+
+<option>Good</option>
+
+<option>Average</option>
+
+<option>Needs Improvement</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Confidence</label>
+
+<select id="confidence">
+
+<option value="">Select</option>
+
+<option>High</option>
+
+<option>Moderate</option>
+
+<option>Low</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Leadership</label>
+
+<select id="leadership">
+
+<option value="">Select</option>
+
+<option>Excellent</option>
+
+<option>Good</option>
+
+<option>Average</option>
+
+<option>Needs Improvement</option>
+
+</select>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =======================================
+        WEEKLY REFLECTION
+======================================= -->
+
+<section class="form-section">
+
+<div class="section-card">
+
+<h2>
+
+<i class="fa-solid fa-pen-to-square"></i>
+
+Weekly Reflection
+
+</h2>
+
+<div class="form-group">
+
+<label>
+
+What went well this week?
+
+</label>
+
+<textarea
+id="weeklyReflection"
+placeholder="Write your answer here..."></textarea>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Biggest challenge you faced?
+
+</label>
+
+<textarea
+id="challenge"
+placeholder="Describe your challenge..."></textarea>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Additional Comments
+
+</label>
+
+<textarea
+id="comments"
+placeholder="Anything else you'd like to share?"></textarea>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Do you need mentor support?
+
+</label>
+
+<select id="mentorSupport">
+
+<option value="">Select</option>
+
+<option>Yes</option>
+
+<option>No</option>
+
+</select>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =======================================
+        BUTTONS
+======================================= -->
+
+<div class="student-buttons">
+
+<button
+type="submit"
+class="primary-btn">
+
+Generate Dashboard
+
+</button>
+
+<button
+type="reset"
+class="secondary-btn">
+
+Reset Form
+
+</button>
+
+</div>
+
+</form>
+
+</main>
+
+<!-- =======================================
+        JAVASCRIPT
+======================================= -->
+
+<script src="js/student-dashboard.js"></script>
+
+</body>
+
+</html>

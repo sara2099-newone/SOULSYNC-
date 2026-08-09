@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SOULSYNC | Student Wellness Report</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/demo.css">
+
+</head>
+
+<body>
+
+<!-- ======================================
+        REPORT HEADER
+====================================== -->
+
+<header class="report-header">
+
+    <div>
+
+        <h1>SOULSYNC</h1>
+
+        <p>Student Wellness Assessment Report</p>
+
+    </div>
+
+    <div class="institution-badge">
+
+        <i class="fa-solid fa-file-lines"></i>
+
+        Final Report
+
+    </div>
+
+</header>
+
+<!-- ======================================
+        MAIN
+====================================== -->
+
+<main class="report-container">
+
+<!-- ======================================
+        STUDENT INFORMATION
+====================================== -->
+
+<section class="student-summary">
+
+<h2>
+
+<i class="fa-solid fa-user-graduate"></i>
+
+Student Information
+
+</h2>
+
+<div class="summary-grid">
+
+<div class="summary-card">
+
+<i class="fa-solid fa-user"></i>
+
+<h3 id="studentName">
+
+Loading...
+
+</h3>
+
+<p>
+
+Student Name
+
+</p>
+
+</div>
+
+<div class="summary-card">
+
+<i class="fa-solid fa-id-card"></i>
+
+<h3 id="registerNumber">
+
+Loading...
+
+</h3>
+
+<p>
+
+Register Number
+
+</p>
+
+</div>
+
+<div class="summary-card">
+
+<i class="fa-solid fa-building-columns"></i>
+
+<h3 id="department">
+
+Loading...
+
+</h3>
+
+<p>
+
+Department
+
+</p>
+
+</div>
+
+<div class="summary-card">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+<h3 id="semester">
+
+Loading...
+
+</h3>
+
+<p>
+
+Semester
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================
+        OVERALL SCORES
+====================================== -->
+
+<section class="report-summary">
+
+<div class="report-card">
+
+<i class="fa-solid fa-book-open"></i>
+
+<h2 id="academicScore">
+
+0
+
+</h2>
+
+<p>
+
+Academic Score
+
+</p>
+
+</div>
+
+<div class="report-card">
+
+<i class="fa-solid fa-calendar-check"></i>
+
+<h2 id="attendanceScore">
+
+0
+
+</h2>
+
+<p>
+
+Attendance Score
+
+</p>
+
+</div>
+
+<div class="report-card">
+
+<i class="fa-solid fa-heart-circle-check"></i>
+
+<h2 id="wellnessScore">
+
+0
+
+</h2>
+
+<p>
+
+Wellness Score
+
+</p>
+
+</div>
+
+<div class="report-card">
+
+<i class="fa-solid fa-shield-heart"></i>
+
+<h2 id="riskLevel">
+
+Low
+
+</h2>
+
+<p>
+
+Overall Risk Level
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ======================================
+        ACADEMIC DETAILS
+====================================== -->
+
+<section class="chart-card">
+
+<h3>
+
+<i class="fa-solid fa-chart-column"></i>
+
+Academic Performance Summary
+
+</h3>
+
+<table class="report-table">
+
+<tr>
+
+<th>Category</th>
+
+<th>Value</th>
+
+</tr>
+
+<tr>
+
+<td>Internal Marks</td>
+
+<td id="internalMarks">0%</td>
+
+</tr>
+
+<tr>
+
+<td>Assignment Completion</td>
+
+<td id="assignmentCompletion">0%</td>
+
+</tr>
+
+<tr>
+
+<td>Academic Confidence</td>
+
+<td id="academicConfidence">0/10</td>
+
+</tr>
+
+<tr>
+
+<td>Study Hours</td>
+
+<td id="studyHours">0 hrs</td>
+
+</tr>
+
+</table>
+
+</section>
+<!-- ======================================
+        ATTENDANCE SUMMARY
+====================================== -->
+
+<section class="chart-card">
+
+<h3>
+
+<i class="fa-solid fa-calendar-check"></i>
+
+Attendance Summary
+
+</h3>
+
+<table class="report-table">
+
+<tr>
+
+<th>Category</th>
+
+<th>Value</th>
+
+</tr>
+
+<tr>
+
+<td>Attendance</td>
+
+<td id="attendance">0%</td>
+
+</tr>
+
+<tr>
+
+<td>Classes Missed</td>
+
+<td id="classesMissed">0</td>
+
+</tr>
+
+<tr>
+
+<td>Punctuality</td>
+
+<td id="punctuality">--</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<!-- ======================================
+        WELLBEING SUMMARY
+====================================== -->
+
+<section class="chart-card">
+
+<h3>
+
+<i class="fa-solid fa-heart"></i>
+
+Wellbeing Summary
+
+</h3>
+
+<table class="report-table">
+
+<tr>
+
+<th>Category</th>
+
+<th>Value</th>
+
+</tr>
+
+<tr>
+
+<td>Current Mood</td>
+
+<td id="mood">--</td>
+
+</tr>
+
+<tr>
+
+<td>Stress Level</td>
+
+<td id="stressLevel">0/10</td>
+
+</tr>
+
+<tr>
+
+<td>Anxiety Level</td>
+
+<td id="anxietyLevel">0/10</td>
+
+</tr>
+
+<tr>
+
+<td>Sleep Hours</td>
+
+<td id="sleepHours">0 hrs</td>
+
+</tr>
+
+<tr>
+
+<td>Energy Level</td>
+
+<td id="energyLevel">--</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<!-- ======================================
+        LIFESTYLE SUMMARY
+====================================== -->
+
+<section class="chart-card">
+
+<h3>
+
+<i class="fa-solid fa-leaf"></i>
+
+Lifestyle Summary
+
+</h3>
+
+<table class="report-table">
+
+<tr>
+
+<th>Category</th>
+
+<th>Value</th>
+
+</tr>
+
+<tr>
+
+<td>Water Intake</td>
+
+<td id="waterIntake">--</td>
+
+</tr>
+
+<tr>
+
+<td>Eating Habits</td>
+
+<td id="eatingHabits">--</td>
+
+</tr>
+
+<tr>
+
+<td>Exercise</td>
+
+<td id="exercise">--</td>
+
+</tr>
+
+<tr>
+
+<td>Screen Time</td>
+
+<td id="screenTime">0 hrs</td>
+
+</tr>
+
+<tr>
+
+<td>Social Interaction</td>
+
+<td id="socialInteraction">--</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<!-- ======================================
+        CLASSROOM PARTICIPATION
+====================================== -->
+
+<section class="chart-card">
+
+<h3>
+
+<i class="fa-solid fa-people-group"></i>
+
+Classroom Participation
+
+</h3>
+
+<table class="report-table">
+
+<tr>
+
+<th>Category</th>
+
+<th>Value</th>
+
+</tr>
+
+<tr>
+
+<td>Participation</td>
+
+<td id="participation">--</td>
+
+</tr>
+
+<tr>
+
+<td>Teamwork</td>
+
+<td id="teamwork">--</td>
+
+</tr>
+
+<tr>
+
+<td>Communication</td>
+
+<td id="communication">--</td>
+
+</tr>
+
+<tr>
+
+<td>Confidence</td>
+
+<td id="confidence">--</td>
+
+</tr>
+
+<tr>
+
+<td>Leadership</td>
+
+<td id="leadership">--</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<!-- ======================================
+        WEEKLY REFLECTION
+====================================== -->
+
+<section class="chart-card">
+
+<h3>
+
+<i class="fa-solid fa-pen-to-square"></i>
+
+Student Weekly Reflection
+
+</h3>
+
+<table class="report-table">
+
+<tr>
+
+<th>Question</th>
+
+<th>Student Response</th>
+
+</tr>
+
+<tr>
+
+<td>What went well this week?</td>
+
+<td id="weeklyReflection">
+
+-
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Biggest Challenge</td>
+
+<td id="challenge">
+
+-
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Additional Comments</td>
+
+<td id="comments">
+
+-
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Mentor Support Needed</td>
+
+<td id="mentorSupport">
+
+No
+
+</td>
+
+</tr>
+
+</table>
+
+</section>
+<!-- ======================================
+        TEACHER OBSERVATION
+====================================== -->
+
+<section class="chart-card">
+
+<h3>
+
+<i class="fa-solid fa-chalkboard-user"></i>
+
+Teacher Observation Summary
+
+</h3>
+
+<table class="report-table">
+
+<tr>
+
+<th>Category</th>
+
+<th>Observation</th>
+
+</tr>
+
+<tr>
+
+<td>Participation</td>
+
+<td id="teacherParticipation">--</td>
+
+</tr>
+
+<tr>
+
+<td>Behaviour</td>
+
+<td id="teacherBehaviour">--</td>
+
+</tr>
+
+<tr>
+
+<td>Communication</td>
+
+<td id="teacherCommunication">--</td>
+
+</tr>
+
+<tr>
+
+<td>Concern Level</td>
+
+<td id="teacherConcern">--</td>
+
+</tr>
+
+<tr>
+
+<td>Recommendation</td>
+
+<td id="teacherRecommendation">--</td>
+
+</tr>
+
+<tr>
+
+<td>Teacher Notes</td>
+
+<td id="teacherNotes">--</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<!-- ======================================
+        PARENT OBSERVATION
+====================================== -->
+
+<section class="chart-card">
+
+<h3>
+
+<i class="fa-solid fa-people-roof"></i>
+
+Parent Observation Summary
+
+</h3>
+
+<table class="report-table">
+
+<tr>
+
+<th>Category</th>
+
+<th>Observation</th>
+
+</tr>
+
+<tr>
+
+<td>Sleep Quality</td>
+
+<td id="sleepQuality">--</td>
+
+</tr>
+
+<tr>
+
+<td>Family Communication</td>
+
+<td id="familyCommunication">--</td>
+
+</tr>
+
+<tr>
+
+<td>Emotional Behaviour</td>
+
+<td id="emotionalBehaviour">--</td>
+
+</tr>
+
+<tr>
+
+<td>Concern Level</td>
+
+<td id="parentConcernLevel">--</td>
+
+</tr>
+
+<tr>
+
+<td>Recommendation</td>
+
+<td id="parentRecommendation">--</td>
+
+</tr>
+
+<tr>
+
+<td>Parent Notes</td>
+
+<td id="parentNotes">--</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<!-- ======================================
+        INSTITUTION DECISION
+====================================== -->
+
+<section class="chart-card">
+
+<h3>
+
+<i class="fa-solid fa-building-columns"></i>
+
+Institution Decision
+
+</h3>
+
+<table class="report-table">
+
+<tr>
+
+<th>Category</th>
+
+<th>Decision</th>
+
+</tr>
+
+<tr>
+
+<td>Institution Decision</td>
+
+<td id="institutionDecision">--</td>
+
+</tr>
+
+<tr>
+
+<td>Priority Level</td>
+
+<td id="priorityLevel">--</td>
+
+</tr>
+
+<tr>
+
+<td>Support Plan</td>
+
+<td id="supportPlan">--</td>
+
+</tr>
+
+<tr>
+
+<td>Review Timeline</td>
+
+<td id="reviewTimeline">--</td>
+
+</tr>
+
+<tr>
+
+<td>Institution Notes</td>
+
+<td id="institutionNotes">--</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<!-- ======================================
+        FINAL AI RECOMMENDATION
+====================================== -->
+
+<section class="final-recommendation">
+
+<h2>
+
+<i class="fa-solid fa-brain"></i>
+
+SOULSYNC AI Final Recommendation
+
+</h2>
+
+<p id="finalRecommendation">
+
+Loading recommendation...
+
+</p>
+
+</section>
+
+<!-- ======================================
+        ACTION BUTTONS
+====================================== -->
+
+<div class="report-actions">
+
+<button
+id="printReport"
+class="primary-btn"
+type="button">
+
+<i class="fa-solid fa-print"></i>
+
+Print Report
+
+</button>
+
+<button
+id="finishDemo"
+class="secondary-btn"
+type="button">
+
+<i class="fa-solid fa-circle-check"></i>
+
+Finish Demo
+
+</button>
+
+</div>
+
+</main>
+
+<!-- ======================================
+        JAVASCRIPT
+====================================== -->
+
+<script src="js/report.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SOULSYNC | Institution Dashboard</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Demo CSS -->
+
+    <link rel="stylesheet"
+          href="css/demo.css">
+
+</head>
+
+<body>
+
+<!-- ======================================
+        HEADER
+====================================== -->
+
+<header class="institution-header">
+
+    <div>
+
+        <h1>SOULSYNC</h1>
+
+        <p>Institution Dashboard</p>
+
+    </div>
+
+    <div class="institution-badge">
+
+        <i class="fa-solid fa-circle"></i>
+
+        Demo Mode
+
+    </div>
+
+</header>
+
+<!-- ======================================
+        MAIN
+====================================== -->
+
+<main class="dashboard-container">
+
+<!-- ======================================
+        INSTITUTION PROFILE
+====================================== -->
+
+<section class="teacher-profile">
+
+<div class="teacher-info">
+
+<div class="teacher-avatar">
+
+<i class="fa-solid fa-building-columns"></i>
+
+</div>
+
+<div class="teacher-details">
+
+<h2>
+
+Institution Analytics 👋
+
+</h2>
+
+<p>
+
+Review consolidated student wellbeing,
+academic performance and recommendations.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="teacher-stats">
+
+<div class="teacher-stat">
+
+<h3>1</h3>
+
+<span>Student</span>
+
+</div>
+
+<div class="teacher-stat">
+
+<h3>3</h3>
+
+<span>Reviews</span>
+
+</div>
+
+<div class="teacher-stat">
+
+<h3>Live</h3>
+
+<span>Status</span>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================
+        STUDENT SUMMARY
+====================================== -->
+
+<section class="student-summary">
+
+<h2>
+
+<i class="fa-solid fa-user-graduate"></i>
+
+Student Information
+
+</h2>
+
+<div class="summary-grid">
+
+<div class="summary-card">
+
+<i class="fa-solid fa-user"></i>
+
+<h3 id="studentNameDisplay">
+
+Loading...
+
+</h3>
+
+<p>Student Name</p>
+
+</div>
+
+<div class="summary-card">
+
+<i class="fa-solid fa-id-card"></i>
+
+<h3 id="registerDisplay">
+
+Loading...
+
+</h3>
+
+<p>Register Number</p>
+
+</div>
+
+<div class="summary-card">
+
+<i class="fa-solid fa-building"></i>
+
+<h3 id="departmentDisplay">
+
+Loading...
+
+</h3>
+
+<p>Department</p>
+
+</div>
+
+<div class="summary-card">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+<h3 id="semesterDisplay">
+
+Loading...
+
+</h3>
+
+<p>Semester</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================
+        OVERALL ANALYTICS
+====================================== -->
+
+<section class="analytics-grid">
+
+<div class="analytics-card">
+
+<i class="fa-solid fa-heart-circle-check"></i>
+
+<h2 id="wellnessScoreDisplay">
+
+0
+
+</h2>
+
+<p>
+
+Wellness Score
+
+</p>
+
+</div>
+
+<div class="analytics-card">
+
+<i class="fa-solid fa-book-open"></i>
+
+<h2 id="academicScoreDisplay">
+
+0
+
+</h2>
+
+<p>
+
+Academic Score
+
+</p>
+
+</div>
+
+<div class="analytics-card">
+
+<i class="fa-solid fa-calendar-check"></i>
+
+<h2 id="attendanceScoreDisplay">
+
+0
+
+</h2>
+
+<p>
+
+Attendance Score
+
+</p>
+
+</div>
+
+<div class="analytics-card">
+
+<i class="fa-solid fa-shield-heart"></i>
+
+<h2 id="riskLevelDisplay">
+
+Low
+
+</h2>
+
+<p>
+
+Risk Level
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ======================================
+        ACADEMIC SUMMARY
+====================================== -->
+
+<section class="chart-card">
+
+<h3>
+
+<i class="fa-solid fa-chart-column"></i>
+
+Academic Performance Summary
+
+</h3>
+
+<div class="summary-grid">
+
+<div class="summary-card">
+
+<i class="fa-solid fa-percent"></i>
+
+<h3 id="marksDisplay">
+
+0%
+
+</h3>
+
+<p>
+
+Internal Marks
+
+</p>
+
+</div>
+
+<div class="summary-card">
+
+<i class="fa-solid fa-list-check"></i>
+
+<h3 id="assignmentDisplay">
+
+0%
+
+</h3>
+
+<p>
+
+Assignment Completion
+
+</p>
+
+</div>
+
+<div class="summary-card">
+
+<i class="fa-solid fa-brain"></i>
+
+<h3 id="confidenceDisplay">
+
+0
+
+</h3>
+
+<p>
+
+Academic Confidence
+
+</p>
+
+</div>
+
+<div class="summary-card">
+
+<i class="fa-solid fa-clock"></i>
+
+<h3 id="studyDisplay">
+
+0 hrs
+
+</h3>
+
+<p>
+
+Study Hours
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- ======================================
+        ATTENDANCE ANALYTICS
+====================================== -->
+
+<section class="chart-card">
+
+<h3>
+
+<i class="fa-solid fa-calendar-check"></i>
+
+Attendance Analytics
+
+</h3>
+
+<div class="summary-grid">
+
+<div class="summary-card">
+
+<i class="fa-solid fa-percent"></i>
+
+<h3 id="attendanceDisplay">
+
+0%
+
+</h3>
+
+<p>
+
+Overall Attendance
+
+</p>
+
+</div>
+
+<div class="summary-card">
+
+<i class="fa-solid fa-calendar-xmark"></i>
+
+<h3 id="missedDisplay">
+
+0
+
+</h3>
+
+<p>
+
+Classes Missed
+
+</p>
+
+</div>
+
+<div class="summary-card">
+
+<i class="fa-solid fa-user-clock"></i>
+
+<h3 id="punctualityDisplay">
+
+--
+
+</h3>
+
+<p>
+
+Punctuality
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================
+        WELLBEING ANALYTICS
+====================================== -->
+
+<section class="chart-card">
+
+<h3>
+
+<i class="fa-solid fa-heart"></i>
+
+Wellbeing Analytics
+
+</h3>
+
+<div class="summary-grid">
+
+<div class="summary-card">
+
+<i class="fa-solid fa-face-smile"></i>
+
+<h3 id="moodDisplay">
+
+😊
+
+</h3>
+
+<p>
+
+Current Mood
+
+</p>
+
+</div>
+
+<div class="summary-card">
+
+<i class="fa-solid fa-bolt"></i>
+
+<h3 id="stressDisplay">
+
+0/10
+
+</h3>
+
+<p>
+
+Stress Level
+
+</p>
+
+</div>
+
+<div class="summary-card">
+
+<i class="fa-solid fa-bed"></i>
+
+<h3 id="sleepDisplay">
+
+0 hrs
+
+</h3>
+
+<p>
+
+Sleep Hours
+
+</p>
+
+</div>
+
+<div class="summary-card">
+
+<i class="fa-solid fa-battery-three-quarters"></i>
+
+<h3 id="energyDisplay">
+
+--
+
+</h3>
+
+<p>
+
+Energy Level
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================
+        TEACHER OBSERVATION
+====================================== -->
+
+<section class="chart-card">
+
+<h3>
+
+<i class="fa-solid fa-chalkboard-user"></i>
+
+Teacher Observation Summary
+
+</h3>
+
+<div class="summary-grid">
+
+<div class="summary-card">
+
+<i class="fa-solid fa-users"></i>
+
+<h3 id="teacherParticipationDisplay">
+
+Loading...
+
+</h3>
+
+<p>
+
+Participation
+
+</p>
+
+</div>
+
+<div class="summary-card">
+
+<i class="fa-solid fa-user-check"></i>
+
+<h3 id="teacherBehaviourDisplay">
+
+Loading...
+
+</h3>
+
+<p>
+
+Behaviour
+
+</p>
+
+</div>
+
+<div class="summary-card">
+
+<i class="fa-solid fa-comments"></i>
+
+<h3 id="teacherCommunicationDisplay">
+
+Loading...
+
+</h3>
+
+<p>
+
+Communication
+
+</p>
+
+</div>
+
+<div class="summary-card">
+
+<i class="fa-solid fa-circle-exclamation"></i>
+
+<h3 id="teacherConcernDisplay">
+
+Loading...
+
+</h3>
+
+<p>
+
+Concern Level
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================
+        PARENT OBSERVATION
+====================================== -->
+
+<section class="chart-card">
+
+<h3>
+
+<i class="fa-solid fa-people-roof"></i>
+
+Parent Observation Summary
+
+</h3>
+
+<div class="summary-grid">
+
+<div class="summary-card">
+
+<i class="fa-solid fa-house"></i>
+
+<h3 id="familyCommunicationDisplay">
+
+Loading...
+
+</h3>
+
+<p>
+
+Family Communication
+
+</p>
+
+</div>
+
+<div class="summary-card">
+
+<i class="fa-solid fa-heart-circle-check"></i>
+
+<h3 id="emotionDisplay">
+
+Loading...
+
+</h3>
+
+<p>
+
+Emotional Behaviour
+
+</p>
+
+</div>
+
+<div class="summary-card">
+
+<i class="fa-solid fa-triangle-exclamation"></i>
+
+<h3 id="parentConcernDisplay">
+
+Loading...
+
+</h3>
+
+<p>
+
+Concern Level
+
+</p>
+
+</div>
+
+<div class="summary-card">
+
+<i class="fa-solid fa-lightbulb"></i>
+
+<h3 id="parentRecommendationDisplay">
+
+Loading...
+
+</h3>
+
+<p>
+
+Recommendation
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================
+        SOULSYNC AI INSIGHTS
+====================================== -->
+
+<section class="ai-card">
+
+<h2>
+
+<i class="fa-solid fa-brain"></i>
+
+SOULSYNC AI Insights
+
+</h2>
+
+<ul>
+
+<li>
+
+<strong>Overall Risk:</strong>
+
+<span id="overallRiskDisplay">
+
+Loading...
+
+</span>
+
+</li>
+
+<li>
+
+<strong>Academic Performance:</strong>
+
+<span id="academicInsight">
+
+Loading...
+
+</span>
+
+</li>
+
+<li>
+
+<strong>Attendance Analysis:</strong>
+
+<span id="attendanceInsight">
+
+Loading...
+
+</span>
+
+</li>
+
+<li>
+
+<strong>Teacher Observation:</strong>
+
+<span id="teacherInsight">
+
+Loading...
+
+</span>
+
+</li>
+
+<li>
+
+<strong>Parent Observation:</strong>
+
+<span id="parentInsight">
+
+Loading...
+
+</span>
+
+</li>
+
+<li>
+
+<strong>Final AI Recommendation:</strong>
+
+<span id="aiRecommendation">
+
+Loading...
+
+</span>
+
+</li>
+
+</ul>
+
+</section>
+<!-- ======================================
+        INSTITUTION DECISION
+====================================== -->
+
+<form id="institutionForm">
+
+<section class="report-card">
+
+<h3>
+
+<i class="fa-solid fa-building-circle-check"></i>
+
+Institution Decision
+
+</h3>
+
+<div class="teacher-form">
+
+<div class="form-group">
+
+<label>
+
+Final Institution Decision
+
+</label>
+
+<select id="institutionDecision">
+
+<option value="">Select</option>
+
+<option>No Immediate Action Required</option>
+
+<option>Academic Monitoring</option>
+
+<option>Mentor Intervention</option>
+
+<option>Parent Meeting</option>
+
+<option>Counselling Support</option>
+
+<option>Wellness Monitoring</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Priority Level
+
+</label>
+
+<select id="priorityLevel">
+
+<option value="">Select</option>
+
+<option>Low</option>
+
+<option>Medium</option>
+
+<option>High</option>
+
+<option>Critical</option>
+
+</select>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================
+        SUPPORT PLAN
+====================================== -->
+
+<section class="report-card">
+
+<h3>
+
+<i class="fa-solid fa-hand-holding-heart"></i>
+
+Support Plan
+
+</h3>
+
+<div class="teacher-form">
+
+<div class="form-group">
+
+<label>
+
+Primary Support Required
+
+</label>
+
+<select id="supportPlan">
+
+<option value="">Select</option>
+
+<option>Academic Support</option>
+
+<option>Mental Health Counselling</option>
+
+<option>Career Guidance</option>
+
+<option>Mentor Follow-up</option>
+
+<option>Parent Collaboration</option>
+
+<option>Regular Monitoring</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Review Timeline
+
+</label>
+
+<select id="reviewTimeline">
+
+<option value="">Select</option>
+
+<option>1 Week</option>
+
+<option>2 Weeks</option>
+
+<option>1 Month</option>
+
+<option>3 Months</option>
+
+</select>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================
+        FINAL NOTES
+====================================== -->
+
+<section class="report-card">
+
+<h3>
+
+<i class="fa-solid fa-file-lines"></i>
+
+Institution Notes
+
+</h3>
+
+<div class="form-group">
+
+<label>
+
+Final Remarks
+
+</label>
+
+<textarea
+id="institutionNotes"
+placeholder="Enter the institution's final remarks and observations..."></textarea>
+
+</div>
+
+</section>
+
+<!-- ======================================
+        FINAL RECOMMENDATION
+====================================== -->
+
+<section class="recommendation-box">
+
+<h2>
+
+<i class="fa-solid fa-circle-check"></i>
+
+Final SOULSYNC Recommendation
+
+</h2>
+
+<p id="finalRecommendation">
+
+The final recommendation will be generated automatically after reviewing all available information.
+
+</p>
+
+</section>
+
+<!-- ======================================
+        ACTION BUTTONS
+====================================== -->
+
+<div class="institution-actions">
+
+<button
+type="submit"
+class="primary-btn">
+
+<i class="fa-solid fa-file-arrow-down"></i>
+
+Generate Final Report
+
+</button>
+
+<button
+type="reset"
+class="secondary-btn">
+
+<i class="fa-solid fa-rotate-left"></i>
+
+Reset
+
+</button>
+
+</div>
+
+</form>
+
+</main>
+
+<!-- ======================================
+        JAVASCRIPT
+====================================== -->
+
+<script src="js/institution-dashboard.js"></script>
+
+</body>
+
+</html>
